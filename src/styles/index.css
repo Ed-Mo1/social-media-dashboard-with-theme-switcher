@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+@layer components {
+  .followrsCard {
+    @apply h-full transition-colors hover:bg-[#e0e4f0] grid place-content-center gap-8 bg-light-lightGrayishBlue dark:bg-dark-darkDesaturatedBlue dark:hover:bg-[#343b56] cursor-pointer py-8 rounded relative before:rounded-t-lg before:absolute before:left-0 before:top-0 before:w-full before:h-[3px];
+  }
+  .toggle-btn {
+    @apply transition-all hover:bg-toggleDark block py-4 px-8 rounded-full bg-light-toggle dark:bg-toggleDark relative before:w-[38%] before:aspect-square before:absolute before:top-[50%] before:translate-y-[-50%] before:right-1 dark:before:right-9 before:transition-all before:rounded-xl before:bg-white dark:before:bg-dark-veryDarkBlue;
+  }
+  .interactivity-card{
+    @apply transition-colors py-4 px-6 rounded bg-light-lightGrayishBlue dark:bg-dark-darkDesaturatedBlue hover:bg-[#e0e4f0] cursor-pointer dark:hover:bg-[#343b56]
+  }
+  .upper-content-handler{
+    @apply py-8 relative before:absolute before:left-0 before:top-0 before:w-full before:h-[25%] md:before:h-[60%] before:rounded-b-xl before:bg-light-veryPaleBlue dark:before:bg-dark-veryDarkBlue2 before:transition-colors
+  }
+}
